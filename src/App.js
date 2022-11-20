@@ -13,12 +13,11 @@ function App() {
       <Routes>
 
         <Route 
-          path = "/" 
-          exact element = {
-            <Home
-            />
+          path = "/" exact
+          element = {
+            <Home/>
           }
-          />
+        />
 
         <Route 
           path = "/about" 
@@ -46,7 +45,7 @@ function App() {
           element= {
             <Contact />
           }
-        /> 
+        />
 
       </Routes>
 

@@ -1,5 +1,6 @@
 
 import { Container, Typography, Button } from '@mui/material';
+import Header from './Header'
 
 function Home({gameObject, setGameObject, setMessage}) {
 
@@ -9,11 +10,7 @@ function Home({gameObject, setGameObject, setMessage}) {
       maxWidth = "100vw"
       >
 
-      <Typography variant = "h1">
-                  
-        home
-              
-      </Typography>
+      <Header/>
 
       <Typography>
                   

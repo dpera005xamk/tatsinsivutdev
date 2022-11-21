@@ -8,8 +8,15 @@ function Header({gameObject, setGameObject, setMessage}) {
 
   return(
     <Container 
-      maxWidth = "100vw"
+      maxWidth = "100vw"      
+      style = {{
+        position: "sticky",
+        background: "gray",
+        marginBottom: "20px",
+        width: "80%"
+      }}  
       >
+
       <Grid container spacing={2} columns={16} textAlign= "center">
   
         <Grid item xs={8}>

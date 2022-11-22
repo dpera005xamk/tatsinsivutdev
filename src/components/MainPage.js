@@ -12,6 +12,7 @@ function MainPage({gameObject, setGameObject, setMessage}) {
       style = {{
         background: "gray",
         marginBottom: "20px",
+        marginTop: "50px",
         width: "80%",
         textAlign: "center"
       }}  

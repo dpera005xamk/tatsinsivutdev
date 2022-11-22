@@ -1,5 +1,6 @@
 
 import { Container, Typography, Button, Grid } from '@mui/material';
+import flower from '../img/isokukka.webp';
 
 
 
@@ -12,6 +13,7 @@ function PageTitle({gameObject, setGameObject, setMessage}) {
       style = {{
         background: "gray",
         marginBottom: "20px",
+        marginTop: "100px",
         width: "80%"
       }}  
       >
@@ -37,7 +39,10 @@ function PageTitle({gameObject, setGameObject, setMessage}) {
         </Grid>
   
         <Grid item xs={8}>
-          <Typography>kuva tähän</Typography>
+          <img 
+            src= {flower} 
+            alt= "big flower"
+            style= {{width: "100%", height: "100%"}}></img>
         </Grid>
       
       </Grid>

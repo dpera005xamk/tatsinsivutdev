@@ -12,7 +12,7 @@ function Home({gameObject, setGameObject, setMessage}) {
   return(
     <Container 
       maxWidth = "100vw"
-      textAlign= "center"
+      textalign= "center"
       >
 
       <Header/>

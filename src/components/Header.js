@@ -1,22 +1,31 @@
 
 import { Container, Typography, Button, Grid } from '@mui/material';
 import { buttonTexts } from '../texts/texts.js'
+import { purple } from '../colours/colours.js';
 
 const inLine = {display: "inline-block"}
 
-function Header({gameObject, setGameObject, setMessage}) {
+function Header({lang, setLang}) {
 
+  const switchLanguage = () => {
+    console.log('click');
+    (lang === 'pt')?
+    setLang('en'):
+    setLang('pt');
+
+  }
 
   return(
     <Container 
       maxWidth = "100vw"      
-      style = {{
+      sx = {{
         background: "white",
-        position: "fixed",
+        position: "sticky",
         width: "80%",
         left: "0",
         right: "0",
-        top: "0"
+        top: "0",
+        zIndex: "2"
       }}  
       >
 
@@ -25,7 +34,7 @@ function Header({gameObject, setGameObject, setMessage}) {
         <Grid item xs={8}>
           <Typography 
             variant= "h6"
-            style = {{
+            sx = {{
               margin: "auto",
               padding: "30px 0"
             }}>
@@ -33,41 +42,64 @@ function Header({gameObject, setGameObject, setMessage}) {
           </Typography>
         </Grid>
   
-        <Grid item xs={8}>
+        <Grid item xs={8} sx= {{textAlign: "right"}}>
           <Button 
-            style= {{
+            sx= {{
+              background: purple,
+              color: "black",
               display: "block",
               right: "0",
-              marginLeft: "auto"}}
+              marginLeft: "auto",
+              marginTop: "2px"
+            }}
           >
-            {buttonTexts.bookButton.en}
+            {buttonTexts.bookButton[lang]}
           </Button>
 
           <Button
-                style= {{float: "right bottom"}}
-              >
-                {buttonTexts.menuButton1.en}
-              </Button>
+            sx= {{float: "right bottom",
+            marginTop: "2px"}}
+          >
+            {buttonTexts.menuButton1[lang]}
+          </Button>
+          
           <Button
-                style= {{float: "right", float: "bottom"}}
-              >
-                {buttonTexts.menuButton2.en}
-              </Button>
-              <Button
-                style= {{float: "right"}}
-              >
-                {buttonTexts.menuButton3.en}
-              </Button>
-              <Button
-                style= {{
-                  position: "fixed",
-                  right: "0",
-                  bottom: "0",
-                  padding: "20"
-                }}
-              >
-                {buttonTexts.menuButton4.en}
-              </Button>
+            sx= {{float: "right bottom",
+            marginTop: "2px"}}
+          >
+            {buttonTexts.menuButton2[lang]}
+          </Button>
+
+          <Button
+            sx= {{float: "right bottom",
+            marginTop: "2px"}}
+          >
+            {buttonTexts.menuButton3[lang]}
+          </Button>
+
+          <Button
+            sx= {{
+              float: "right bottom",
+              marginTop: "2px"
+            }}
+            >
+            {buttonTexts.menuButton4[lang]}
+          </Button>
+
+          <Button
+            sx= {{
+              float: "right bottom",
+              background: "rgb(240,240,240)",
+              marginTop: "2px"
+
+            }}
+            onClick= {switchLanguage}
+            >
+            {(lang === 'en')?
+              'portuguese':
+              'english'
+            }
+          </Button>
 
         </Grid>
       

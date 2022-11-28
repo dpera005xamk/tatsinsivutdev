@@ -1,48 +1,53 @@
 
-import { Container, Typography, Button, Grid } from '@mui/material';
+import { Container, Typography, Grid, ImageList, ImageListItem, Box } from '@mui/material';
 import flower from '../img/isokukka.webp';
+import { titleTexts } from '../texts/texts.js';
+import { purple } from '../colours/colours.js';
 
-
-
-function PageTitle({gameObject, setGameObject, setMessage}) {
+function PageTitle({lang}) {
 
 
   return(
     <Container 
       maxWidth = "100vw" 
-      style = {{
-        background: "gray",
+      sx = {{
+        background: purple,
         marginBottom: "20px",
-        marginTop: "100px",
         width: "80%"
       }}  
       >
-      <Grid container spacing={2} columns={16} textAlign= "center">
+      <Grid container spacing={0} columns={16} textAlign= "center" sx= {{display: 'flex', alignItems: 'center'}}>
   
-        <Grid item xs={8}>
-          <Typography variant= "h3">
-            Tässä oli jotain vähän isommalla
+        <Grid item xs={8} sx= {{ background: purple}}>
           
-          </Typography>
           <Typography variant= "h3">
-            Tässä oli jotain vähän isommalla
+            {titleTexts.titleOne[lang]}
+          </Typography>
+          
+          <Typography variant= "h3">
+            {titleTexts.titleTwo[lang]}
           </Typography>
 
           <Typography variant= "h3">
-            Tässä oli jotain vähän isommalla
+            {titleTexts.titleThree[lang]}
           </Typography> 
 
           <Typography variant= "h5">
-            Tässä oli jotain pienemmällä fontilla
+            {titleTexts.smallTitle[lang]}
           </Typography>
 
         </Grid>
   
         <Grid item xs={8}>
-          <img 
-            src= {flower} 
-            alt= "big flower"
-            style= {{width: "100%", height: "100%"}}></img>
+          <Box>
+            <ImageListItem >
+              <img
+                src={flower}
+                alt={'big flower'}
+                sx= {{overflowY: "hidden"}}
+              />
+            </ImageListItem>
+          </Box>
         </Grid>
       
       </Grid>
@@ -52,3 +57,4 @@ function PageTitle({gameObject, setGameObject, setMessage}) {
 }
 
 export default PageTitle;
+

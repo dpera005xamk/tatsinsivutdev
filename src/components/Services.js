@@ -1,7 +1,7 @@
 
 import { Container, Typography, Button } from '@mui/material';
 
-function Services({gameObject, setGameObject, setMessage}) {
+function Services({lang}) {
 
 
   return(

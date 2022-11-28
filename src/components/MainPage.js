@@ -1,9 +1,11 @@
 
 import { Container, Typography, Button, Grid } from '@mui/material';
 
+import { mainTexts } from '../texts/texts.js';
 
 
-function MainPage({gameObject, setGameObject, setMessage}) {
+
+function MainPage({lang}) {
 
 
   return(

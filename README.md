@@ -71,6 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Notes:
 https://miromanninen.wixsite.com/tatianaeboli
+https://miromanninen.wixsite.com/tatianaebolipt
 https://support.google.com/a/users/answer/9308623?hl=en
 https://github.com/xamk-so1/soveltava-harjoitustyo-dpera005xamk/blob/main/src/App.js
 

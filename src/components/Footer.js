@@ -3,7 +3,7 @@ import { Container, Typography, Button, Grid } from '@mui/material';
 
 
 
-function Footer({gameObject, setGameObject, setMessage}) {
+function Footer({lang}) {
 
 
   return(

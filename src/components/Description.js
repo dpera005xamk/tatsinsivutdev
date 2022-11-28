@@ -1,26 +1,45 @@
 
-import { Container, Typography, Button, Grid } from '@mui/material';
+import { Container, Typography, Box, ImageListItem } from '@mui/material';
+import ownImage from '../img/ownpicture.webp';
+import { mainTexts } from '../texts/texts.js';
 
 
-
-function Description({gameObject, setGameObject, setMessage}) {
-
+function Description({lang}) {
 
   return(
     <Container 
       maxWidth = "100vw"
-      style = {{
-        background: "gray",
+      sx = {{
         marginBottom: "20px",
-        width: "80%"
+        width: "80%",
+        textAlign: "center"
       }}  
       >
       
-      <Typography variant= "h6" style= {{textAlign: "center"}}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </Typography>
+      <Typography variant= "h5">
+            {mainTexts.mainOne[lang]}
+          </Typography>
+          
+          <Typography variant= "h3">
+            {mainTexts.mainTwo[lang]}
+          </Typography>
 
-      <p style= {{textAlign: "center"}}>tähän kuva</p>
+          <Typography variant= "h6">
+            {mainTexts.mainThree[lang]}
+          </Typography> 
+
+          <Typography variant= "h6">
+            {mainTexts.mainFour[lang]}
+          </Typography>
+
+          <Box  maxWidth = "30vw">
+            <ImageListItem>
+              <img
+                src={ownImage}
+                alt={'image of Tatiana'}
+              />
+            </ImageListItem>
+          </Box>
    
     </Container>
     );

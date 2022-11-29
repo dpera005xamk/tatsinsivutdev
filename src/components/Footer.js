@@ -1,5 +1,5 @@
 
-import { Container, Typography, Button, Grid } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 
 
 
@@ -10,17 +10,16 @@ function Footer({lang}) {
     <Container 
       maxWidth = "100vw"
       style = {{
-        background: "gray",
         marginBottom: "20px",
-        width: "80%"
+        width: "80%",
+        fontFamily: "Forum"
       }}  
       >
       
-      <Typography variant= "h6" style= {{textAlign: "center"}}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <Typography variant= "h7" sx= {{textAlign: "center"}}>
+        © 2023 by Tatiana Eboli.      
       </Typography>
 
-      <p style= {{textAlign: "center"}}>tähän kuva</p>
    
     </Container>
     );

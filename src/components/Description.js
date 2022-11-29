@@ -8,35 +8,36 @@ function Description({lang}) {
 
   return(
     <Container 
-      maxWidth = "100vw"
+      maxWidth = "100vw" 
       sx = {{
         marginBottom: "20px",
         width: "80%",
-        textAlign: "center"
+        textAlign: "center",
+        fontFamily: "Forum"
       }}  
       >
       
-      <Typography variant= "h5">
+      <Typography variant= "h5" sx= {{fontFamily: "Forum"}}>
             {mainTexts.mainOne[lang]}
           </Typography>
           
-          <Typography variant= "h3">
+          <Typography variant= "h3" sx= {{fontFamily: "Forum"}}>
             {mainTexts.mainTwo[lang]}
           </Typography>
 
-          <Typography variant= "h6">
+          <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
             {mainTexts.mainThree[lang]}
           </Typography> 
 
-          <Typography variant= "h6">
+          <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
             {mainTexts.mainFour[lang]}
           </Typography>
 
-          <Box  maxWidth = "30vw">
+          <Box  maxWidth = "30vw" marginLeft= "auto" marginRight= "auto">
             <ImageListItem>
               <img
                 src={ownImage}
-                alt={'image of Tatiana'}
+                alt='Tatiana'
               />
             </ImageListItem>
           </Box>

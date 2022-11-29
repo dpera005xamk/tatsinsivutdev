@@ -1,9 +1,7 @@
 
 import { Container, Typography, Button, Grid } from '@mui/material';
 import { buttonTexts } from '../texts/texts.js'
-import { purple } from '../colours/colours.js';
-
-const inLine = {display: "inline-block"}
+import { purple, lightPurple } from '../colours/colours.js';
 
 function Header({lang, setLang}) {
 
@@ -27,79 +25,91 @@ function Header({lang, setLang}) {
         top: "0",
         zIndex: "2"
       }}  
-      >
+    >
 
-      <Grid container spacing={2} columns={16} textAlign= "center">
+    <Grid container spacing={2} columns={16} textAlign= "center">
   
-        <Grid item xs={8}>
-          <Typography 
-            variant= "h6"
-            sx = {{
-              margin: "auto",
-              padding: "30px 0"
-            }}>
-            Tatiana Eboli - Developmental and Social Psychologist
-          </Typography>
-        </Grid>
+      <Grid item xs={16} sm={8}>
+        <Typography 
+          variant= "h6"
+          sx = {{
+            margin: "auto",
+            padding: "30px 0",
+            fontFamily: "Forum"
+          }}>
+          Tatiana Eboli - Developmental and Social Psychologist
+        </Typography>
+      </Grid>
   
-        <Grid item xs={8} sx= {{textAlign: "right"}}>
-          <Button 
-            sx= {{
-              background: purple,
-              color: "black",
-              display: "block",
-              right: "0",
-              marginLeft: "auto",
-              marginTop: "2px"
-            }}
-          >
-            {buttonTexts.bookButton[lang]}
-          </Button>
+      <Grid item xs={16} sm= {8} sx= {{textAlign: "right"}}>
+        <Button 
+          sx= {{
+            background: purple,
+            color: "black",
+            display: "block",
+            right: "0",
+            marginLeft: "auto",
+            marginTop: "2px"
+          }}
+        >
+          {buttonTexts.bookButton[lang]}
+        </Button>
 
-          <Button
-            sx= {{float: "right bottom",
-            marginTop: "2px"}}
-          >
-            {buttonTexts.menuButton1[lang]}
-          </Button>
+        <Button
+          sx= {{
+            float: "right bottom",
+            marginTop: "2px",
+            color: "black"
+          }}
+        >
+          {buttonTexts.menuButton1[lang]}
+        </Button>
           
-          <Button
-            sx= {{float: "right bottom",
-            marginTop: "2px"}}
-          >
-            {buttonTexts.menuButton2[lang]}
-          </Button>
+        <Button
+          sx= {{
+            float: "right bottom",
+            marginTop: "2px",
+            color: "black"
+          }}
+        >
+          {buttonTexts.menuButton2[lang]}
+        </Button>
 
-          <Button
-            sx= {{float: "right bottom",
-            marginTop: "2px"}}
-          >
-            {buttonTexts.menuButton3[lang]}
-          </Button>
+        <Button
+          sx= {{
+            float: "right bottom",
+            marginTop: "2px",
+            color: "black"
+          }}
+        >
+          {buttonTexts.menuButton3[lang]}
+        </Button>
 
-          <Button
-            sx= {{
-              float: "right bottom",
-              marginTop: "2px"
-            }}
-            >
-            {buttonTexts.menuButton4[lang]}
-          </Button>
+        <Button
+          sx= {{
+            float: "right bottom",
+            marginTop: "2px",
+            color: "black"
+          }}
+        >
+          {buttonTexts.menuButton4[lang]}
+        </Button>
 
-          <Button
-            sx= {{
-              float: "right bottom",
-              background: "rgb(240,240,240)",
-              marginTop: "2px"
-
-            }}
-            onClick= {switchLanguage}
-            >
-            {(lang === 'en')?
-              'portuguese':
-              'english'
-            }
-          </Button>
+        <Button
+          sx= {{
+            float: "right bottom",
+            background: lightPurple,
+            marginTop: "2px",
+            color: "black"
+          }}
+          onClick= {switchLanguage}
+        >
+          {
+          (lang === 'en')?
+            'portuguese':
+            'english'
+          }
+        </Button>
 
         </Grid>
       

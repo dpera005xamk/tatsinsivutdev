@@ -5,7 +5,6 @@ import Contact from './components/Contact';
 import Services from './components/Services';
 import Blog from './components/Blog';
 
-
 function App() {
   return (
     <Router>

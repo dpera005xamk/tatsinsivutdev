@@ -4,7 +4,7 @@ import ownImage from '../img/ownpicture.webp';
 import { mainTexts } from '../texts/texts.js';
 
 
-function Description({lang}) {
+function Description({ lang, matches }) {
 
   return(
     <Container 
@@ -33,14 +33,20 @@ function Description({lang}) {
             {mainTexts.mainFour[lang]}
           </Typography>
 
-          <Box  maxWidth = "30vw" marginLeft= "auto" marginRight= "auto">
+          {/* if large screen, show the image */}
+          {
+            matches ?
+            <Box  maxWidth = "30vw" marginLeft= "auto" marginRight= "auto">
             <ImageListItem>
               <img
                 src={ownImage}
                 alt='Tatiana'
               />
             </ImageListItem>
-          </Box>
+          </Box>:
+          <></>
+          }
+
    
     </Container>
     );

@@ -12,7 +12,7 @@ function Home() {
 
   useEffect(() => {
       // from https://upmostly.com/tutorials/how-to-use-media-queries-in-react
-      const query = `(min-width: 700px)`;
+      const query = `(min-width: 770px)`;
       const media = window.matchMedia(query);
       if (media.matches !== matches) {
           setMatches(media.matches);

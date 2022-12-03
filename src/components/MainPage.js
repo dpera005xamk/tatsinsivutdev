@@ -60,6 +60,9 @@ function MainPage({ lang, matches }) {
       </Container>
       );
   } else {
+
+    {/* small screen: */}
+
     return(
       <Container 
       maxWidth = "100vw"
@@ -93,8 +96,7 @@ function MainPage({ lang, matches }) {
             </Typography>   
             <Typography variant= "h6">
               {tripleTexts.descTwo[lang]}        
-            </Typography>   
-            <Button sx= {{color: "black", background: lighterPurple}}>{tripleTexts.button[lang]}</Button>        
+            </Typography>         
           </Grid>
 
           <Grid item xs={1} sx= {{background: purple}}>

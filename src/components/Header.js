@@ -2,18 +2,24 @@
 import { Container, Typography, Button, Grid } from '@mui/material';
 import { buttonTexts } from '../texts/texts.js'
 import { purple, lightPurple } from '../colours/colours.js';
+import { useNavigate } from 'react-router-dom';
+
 
 function Header({lang, setLang, matches}) {
+  const navigate = useNavigate();
 
   const switchLanguage = () => {
-    console.log('click');
     (lang === 'pt')?
     setLang('en'):
     setLang('pt');
-
   }
 
-  
+  const changePage = (e) => {
+    console.log('click, where: ', e.target.value);
+
+    navigate(`/${e.target.value}`);
+  }
+
   {/* if bigger screen: */}
   if (matches) {
     return(
@@ -74,6 +80,8 @@ function Header({lang, setLang, matches}) {
               marginTop: "2px",
               color: "black"
             }}
+            value= 'faq'
+            onClick= {changePage}
           >
             {buttonTexts.menuButton2[lang]}
           </Button>
@@ -175,6 +183,8 @@ function Header({lang, setLang, matches}) {
               marginTop: "2px",
               color: "black"
             }}
+            value= "faq"
+            onClick= {changePage}
           >
             {buttonTexts.menuButton2[lang]}
           </Button>

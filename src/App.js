@@ -1,6 +1,6 @@
 import { HashRouter as Router, Route, Routes } from 'react-router-dom'; /* normally BrowserRouter, but changed as this goes to gh-pages, where that does not work*/
 import Home from './components/Home';
-import About from './components/About';
+import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Services from './components/Services';
 import Blog from './components/Blog';
@@ -12,16 +12,16 @@ function App() {
       <Routes>
 
         <Route 
-          path = "/" exact
-          element = {
+          path = "/" 
+          exact element = {
             <Home/>
           }
         />
 
         <Route 
-          path = "/about" 
+          path = "/faq" 
           element= {
-            <About />
+            <FAQ />
           }
         />    
 

@@ -18,7 +18,7 @@ function Description({ lang, matches }) {
         }}  
         >
         
-        <Typography variant= "h5" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h5" sx= {{fontFamily: "Forum"}}>
               {mainTexts.mainOne[lang]}
             </Typography>
             
@@ -64,7 +64,7 @@ function Description({ lang, matches }) {
         }}  
         >
         
-        <Typography variant= "h5" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h5" sx= {{fontFamily: "Forum"}}>
               {mainTexts.mainOne[lang]}
             </Typography>
             
@@ -79,21 +79,6 @@ function Description({ lang, matches }) {
             <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
               {mainTexts.mainFour[lang]}
             </Typography>
-  
-            {/* if large screen, show the image */}
-            {
-              matches ?
-              <Box  maxWidth = "30vw" marginLeft= "auto" marginRight= "auto">
-              <ImageListItem>
-                <img
-                  src={ownImage}
-                  alt='Tatiana'
-                />
-              </ImageListItem>
-            </Box>:
-            <></>
-            }
-  
      
       </Container>
       );

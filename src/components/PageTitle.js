@@ -77,15 +77,15 @@ function PageTitle({lang, matches}) {
             background: purple
           }}>
 
-                <Typography variant= "h3" sx= {{fontFamily: "Forum"}}>
+                <Typography variant= "h4" sx= {{fontFamily: "Forum"}}>
                   {titleTexts.titleOne[lang]}
                 </Typography>
                 
-                <Typography variant= "h3" sx= {{fontFamily: "Forum"}}>
+                <Typography variant= "h4" sx= {{fontFamily: "Forum"}}>
                   {titleTexts.titleTwo[lang]}
                 </Typography>
       
-                <Typography variant= "h3" sx= {{fontFamily: "Forum"}}>
+                <Typography variant= "h4" sx= {{fontFamily: "Forum"}}>
                   {titleTexts.titleThree[lang]}
                 </Typography> 
       

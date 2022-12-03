@@ -66,7 +66,6 @@ function MainPage({ lang, matches }) {
       sx = {{
         marginBottom: "20px",
         marginTop: "50px",
-        width: "80%",
         textAlign: "center"
       }}  
       >
@@ -77,7 +76,7 @@ function MainPage({ lang, matches }) {
             <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
               01.          
             </Typography>
-            <Typography variant= "h3" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h4" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.titleOne[lang]}        
             </Typography>   
             <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
@@ -89,7 +88,7 @@ function MainPage({ lang, matches }) {
             <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
               02.
             </Typography>
-            <Typography variant= "h3" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h4" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.titleTwo[lang]}        
             </Typography>   
             <Typography variant= "h6">
@@ -102,7 +101,7 @@ function MainPage({ lang, matches }) {
             <Typography variant= "h6">
               03.
             </Typography>
-            <Typography variant= "h3">
+            <Typography variant= "h4">
               {tripleTexts.titleThree[lang]}        
             </Typography>   
             <Typography variant= "h6">

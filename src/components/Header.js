@@ -129,11 +129,11 @@ function Header({lang, setLang, matches}) {
         maxWidth = "100vw"      
         sx = {{
           background: "white",
-          width: "80%",
           left: "0",
           right: "0",
           top: "0",
-          zIndex: "2"
+          zIndex: "2",
+          marginBottom: "5px"
         }}  
       >
   

@@ -1,10 +1,17 @@
 
+import { useNavigate } from 'react-router-dom';
 import { Container, Typography, Button, Grid } from '@mui/material';
 import { purple, lightPurple, lighterPurple } from '../colours/colours.js';
 import { tripleTexts } from '../texts/texts.js';
 
 function MainPage({ lang, matches }) {
-  
+  const navigate = useNavigate();
+
+  const changePage = (e) => {
+    window.scrollTo(0, 0);
+    navigate(`/${e.target.value}`);
+  }
+
   if (matches) {
     return(
       <Container 
@@ -41,7 +48,18 @@ function MainPage({ lang, matches }) {
             <Typography variant= "h6">
               {tripleTexts.descTwo[lang]}        
             </Typography>   
-            <Button sx= {{color: "black", background: purple}}>{tripleTexts.button[lang]}</Button>        
+            <Button
+            sx= {{
+              float: "right bottom",
+              marginTop: "2px",
+              color: "black",
+              background: purple
+            }}
+            value= 'faq'
+            onClick= {changePage}
+          >
+            {tripleTexts.button[lang]}
+          </Button>        
           </Grid>
   
           <Grid item xs={4} sx= {{background: purple}}>

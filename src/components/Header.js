@@ -15,8 +15,6 @@ function Header({lang, setLang, matches}) {
   }
 
   const changePage = (e) => {
-    console.log('click, where: ', e.target.value);
-
     navigate(`/${e.target.value}`);
   }
 
@@ -60,6 +58,8 @@ function Header({lang, setLang, matches}) {
               marginLeft: "auto",
               marginTop: "2px"
             }}
+            value= 'contact'
+            onClick= {changePage}
           >
             {buttonTexts.bookButton[lang]}
           </Button>
@@ -70,6 +70,8 @@ function Header({lang, setLang, matches}) {
               marginTop: "2px",
               color: "black"
             }}
+            value= '/'
+            onClick= {changePage}
           >
             {buttonTexts.menuButton1[lang]}
           </Button>
@@ -85,23 +87,27 @@ function Header({lang, setLang, matches}) {
           >
             {buttonTexts.menuButton2[lang]}
           </Button>
-  
+          {/* BLOG NOT YET DONE 
           <Button
             sx= {{
               float: "right bottom",
               marginTop: "2px",
               color: "black"
             }}
+            value= 'blog'
+            onClick= {changePage}
           >
             {buttonTexts.menuButton3[lang]}
           </Button>
-  
+ */} 
           <Button
             sx= {{
               float: "right bottom",
               marginTop: "2px",
               color: "black"
             }}
+            value= 'contact'
+            onClick= {changePage}
           >
             {buttonTexts.menuButton4[lang]}
           </Button>
@@ -165,6 +171,8 @@ function Header({lang, setLang, matches}) {
               color: "black",
               marginTop: "2px"
             }}
+            value= 'contact'
+            onClick= {changePage}
           >
             {buttonTexts.bookButton[lang]}
           </Button>
@@ -174,6 +182,8 @@ function Header({lang, setLang, matches}) {
               marginTop: "2px",
               color: "black"
             }}
+            value= '/'
+            onClick= {changePage}
           >
             {buttonTexts.menuButton1[lang]}
           </Button>
@@ -188,21 +198,25 @@ function Header({lang, setLang, matches}) {
           >
             {buttonTexts.menuButton2[lang]}
           </Button>
-  
+            {/*  BLOG NOT YET DEVELOPED
           <Button
             sx= {{
               marginTop: "2px",
               color: "black"
             }}
+            value= 'blog'
+            onClick= {changePage}
           >
             {buttonTexts.menuButton3[lang]}
           </Button>
-  
+  */}
           <Button
             sx= {{
               marginTop: "2px",
               color: "black"
             }}
+            value= 'contact'
+            onClick= {changePage}
           >
             {buttonTexts.menuButton4[lang]}
           </Button>

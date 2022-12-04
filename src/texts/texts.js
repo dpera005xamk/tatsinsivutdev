@@ -76,3 +76,6 @@ export const faqTexts = {
 // Bloq
 
 // Contact
+export const contactTexts = {
+    title: {en: 'Contact', pt: 'Contato'}
+}

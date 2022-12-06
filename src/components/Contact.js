@@ -1,13 +1,13 @@
 
-import { contactTexts } from '../texts/texts.js';
-import { Container, Typography, Button } from '@mui/material';
+import { contactTexts, contactFormUrl } from '../texts/texts.js';
+import { Container, Typography } from '@mui/material';
 import Header from './Header';
 
 function Contact({ lang, setLang, matches}) {
 
+  /* if big screen */
   if (matches) {
-    {/* if big screen */}
-
+  
     return(
       <Container 
         maxWidth = "100vw" 
@@ -28,14 +28,14 @@ function Contact({ lang, setLang, matches}) {
             {contactTexts.title[lang]}
           </Typography>
 
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6oJhFC_3djqWsUL4UolbG5ZyHsyCH3EpAi7GHlWmMxjfcmA/viewform?embedded=true" width="640" height="358" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <iframe title= "contactFormScreen" src={contactFormUrl[lang]} width="640" height="358" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
 
      
       </Container>
       );  
 
   } else {
-    {/* if small screen */}
+    /* if small screen */
 
     return(
       <Container 
@@ -57,7 +57,7 @@ function Contact({ lang, setLang, matches}) {
             {contactTexts.title[lang]}
           </Typography>
 
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6oJhFC_3djqWsUL4UolbG5ZyHsyCH3EpAi7GHlWmMxjfcmA/viewform?embedded=true" width="640" height="358" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <iframe title= "contactFormMobile" src={contactFormUrl[lang]} width="640" height="358" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
 
      
       </Container>

@@ -1,7 +1,7 @@
 
 import { useNavigate } from 'react-router-dom';
 import { Container, Typography, Button, Grid } from '@mui/material';
-import { purple, lightPurple, lighterPurple } from '../colours/colours.js';
+import { purple, purple2, lightPurple, lighterPurple } from '../colours/colours.js';
 import { tripleTexts } from '../texts/texts.js';
 
 function MainPage({ lang, matches }) {
@@ -30,10 +30,10 @@ function MainPage({ lang, matches }) {
             <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
               01.          
             </Typography>
-            <Typography variant= "h3" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h3" padding= "40px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.titleOne[lang]}        
             </Typography>   
-            <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h6" padding= "40px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.descOne[lang]}        
             </Typography>                    
           </Grid>
@@ -42,10 +42,10 @@ function MainPage({ lang, matches }) {
             <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
               02.
             </Typography>
-            <Typography variant= "h3" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h3" padding= "40px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.titleTwo[lang]}        
             </Typography>   
-            <Typography variant= "h6">
+            <Typography variant= "h6" padding= "40px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.descTwo[lang]}        
             </Typography>   
             <Button
@@ -62,14 +62,14 @@ function MainPage({ lang, matches }) {
           </Button>        
           </Grid>
   
-          <Grid item xs={4} sx= {{background: purple}}>
-            <Typography variant= "h6">
+          <Grid item xs={4} sx= {{background: purple2}}>
+            <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
               03.
             </Typography>
-            <Typography variant= "h3">
+            <Typography variant= "h3" padding= "40px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.titleThree[lang]}        
             </Typography>   
-            <Typography variant= "h6">
+            <Typography variant= "h6" padding= "40px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.descThree[lang]}        
             </Typography>           
           </Grid>      
@@ -79,7 +79,7 @@ function MainPage({ lang, matches }) {
       );
   } else {
 
-    {/* small screen: */}
+    /* small screen: */
 
     return(
       <Container 
@@ -97,10 +97,10 @@ function MainPage({ lang, matches }) {
             <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
               01.          
             </Typography>
-            <Typography variant= "h4" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h4" padding= "40px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.titleOne[lang]}        
             </Typography>   
-            <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h6" padding= "40px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.descOne[lang]}        
             </Typography>                    
           </Grid>
@@ -109,22 +109,22 @@ function MainPage({ lang, matches }) {
             <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
               02.
             </Typography>
-            <Typography variant= "h4" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h4" padding= "40px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.titleTwo[lang]}        
             </Typography>   
-            <Typography variant= "h6">
+            <Typography variant= "h6" padding= "40px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.descTwo[lang]}        
             </Typography>         
           </Grid>
 
-          <Grid item xs={1} sx= {{background: purple}}>
-            <Typography variant= "h6">
+          <Grid item xs={1} sx= {{background: purple2}}>
+            <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
               03.
             </Typography>
-            <Typography variant= "h4">
+            <Typography variant= "h4" padding= "40px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.titleThree[lang]}        
             </Typography>   
-            <Typography variant= "h6">
+            <Typography variant= "h6" padding= "40px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.descThree[lang]}        
             </Typography>           
           </Grid>      

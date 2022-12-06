@@ -6,12 +6,14 @@ export const buttonTexts = {
     menuButton2: {en: 'FAQ', pt: 'Saiba Mais'},
     menuButton3: {en: 'Blog', pt: 'Blog'},
     menuButton4: {en: 'Contact', pt: 'Contato'},
+    mainTitle: {en: 'Tatiana Eboli - Developmental and Social Psychologist', 
+                pt: 'Tatiana Eboli - Psicóloga Social e do Desenvolvimento'}
 }
 
 // PageTitle
 export const titleTexts = {
     titleOne: {en: 'Online', pt: 'Aconselhamento'},
-    titleTwo: {en: 'Counceling for', pt: 'Online Para a sua'},
+    titleTwo: {en: 'Counselling for', pt: 'Online Para a Sua'},
     titleThree: {en: 'Emotional Health', pt: 'Saúde Mental'},
     smallTitle: {en: 'Clear mind - Clear life', pt: 'Mente Saudável - Vida Saudável'}
 }
@@ -58,7 +60,7 @@ export const faqTexts = {
         pt: `Minha abordagem terapêutica é humanista, mais especificamente trabalho com a chamada Terapia Centrada na Pessoa, na qual você e eu trabalhamos juntos para desenvolver as potencialidades que você já possui em um espaço privado e seguro. Empatia e aceitação total sem julgamento são as bases desta abordagem. Não há certo ou errado na maneira como você pensa, sente e se expressa em minha presença. Eu posso lidar com a pressão. Portanto, não tenha receio em me chocar ou me assustar com as suas experiências.`},
     descThree: {
         en: `This is a question that only you can answer. But If you feel overwhelmed, lost, constantly sad, you have the impression that you cannot handle your emotions properly, or if you feel you don’t fit in the world around you and because of that you feel lonely, maybe is time to give it a try and talk with someone who will listen to you and will walk with you side by side into your journey. Why not try it?`, 
-        pt: `Essa é uma pergunta que só você pode responder. Mas se você se sente sobrecarregada (o), perdida (o), constantemente triste, tem a impressão de que não consegue lidar bem com suas emoções, ou sente que não se encaixa no mundo ao seu redor e por isso se sente sozinha (a), talvez seja a hora de se permitir conversar com alguém que irá ouvi-la (o) e caminhar com você lado a lado em sua jornada. Por que não tentar?`},
+        pt: `Essa é uma pergunta que só você pode responder. Mas se você se sente sobrecarregada (o), perdida (o), constantemente triste, tem a impressão de que não consegue lidar bem com suas emoções, ou sente que não se encaixa no mundo ao seu redor e por isso se sente sozinha (o), talvez seja a hora de se permitir conversar com alguém que irá ouvi-la (o) e caminhar com você lado a lado em sua jornada. Por que não tentar?`},
     descFour: {
         en: `Don’t worry. You will feel that the counsellor is the right one in the interview session. If there is a connection between you and the counsellor, the process will begin naturally.`, 
         pt: `Não se preocupe. Você sentirá que o profissional é a pessoa certa ou não logo nas primeiras sessões. Se houver uma conexão entre você e o profissional, o processo se iniciará naturalmente.`},
@@ -78,4 +80,10 @@ export const faqTexts = {
 // Contact
 export const contactTexts = {
     title: {en: 'Contact', pt: 'Contato'}
+}
+
+// Contact form:
+export const contactFormUrl = {
+    en: "https://docs.google.com/forms/d/e/1FAIpQLSe6oJhFC_3djqWsUL4UolbG5ZyHsyCH3EpAi7GHlWmMxjfcmA/viewform?embedded=true",
+    pt: "https://docs.google.com/forms/d/e/1FAIpQLSdlLJ7-BqkX7-ONWEyNbp9_1L9uEiRZvdJSGO2NQL_pzCUCkA/viewform?embedded=true"
 }

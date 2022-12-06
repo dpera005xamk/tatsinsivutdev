@@ -1,6 +1,6 @@
 
 import { Container, Typography, Box, ImageListItem } from '@mui/material';
-import ownImage from '../img/ownpicture.webp';
+import ownImage from '../img/imageCircular.jpg';
 import { mainTexts } from '../texts/texts.js';
 
 
@@ -34,26 +34,24 @@ function Description({ lang, matches }) {
               {mainTexts.mainFour[lang]}
             </Typography>
   
-            {/* if large screen, show the image */}
-            {
-              matches ?
-              <Box  maxWidth = "30vw" marginLeft= "auto" marginRight= "auto">
+            <Box  
+              maxWidth = "30vw" 
+              marginLeft= "auto" 
+              marginRight= "auto"
+              marginTop= "30px">
               <ImageListItem>
                 <img
                   src={ownImage}
                   alt='Tatiana'
                 />
               </ImageListItem>
-            </Box>:
-            <></>
-            }
-  
-     
+            </Box>
+            
       </Container>
       );
   } else {
 
-    {/* small screen */}
+    /* small screen */
     return(
       <Container 
         maxWidth = "100vw" 

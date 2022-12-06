@@ -18,7 +18,7 @@ function Header({lang, setLang, matches}) {
     navigate(`/${e.target.value}`);
   }
 
-  {/* if bigger screen: */}
+  /* if bigger screen: */
   if (matches) {
     return(
       <Container 
@@ -44,7 +44,7 @@ function Header({lang, setLang, matches}) {
               padding: "30px 0",
               fontFamily: "Forum"
             }}>
-            Tatiana Eboli - Developmental and Social Psychologist
+            {buttonTexts.mainTitle[lang]}
           </Typography>
         </Grid>
     
@@ -136,7 +136,7 @@ function Header({lang, setLang, matches}) {
       )
   } else {
 
-    {/* if smaller screen: */}
+    /* if smaller screen: */
     
     return(
       <Container 

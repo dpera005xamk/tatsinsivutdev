@@ -6,12 +6,12 @@ import { purple } from '../colours/colours.js';
 
 function PageTitle({lang, matches}) {
 
-    {/* if bigger screen: */}
+    /* if bigger screen: */
 
     if (matches) {
       return(
         <Container 
-          maxWidth = "100vw" 
+          maxWidth = "100vw"
           sx = {{
             width: "80%",
             fontFamily: "Forum"
@@ -29,7 +29,7 @@ function PageTitle({lang, matches}) {
               background: purple
               }}>
       
-            <Grid item xs={8} sx= {{ background: purple}}>
+            <Grid item xs={8} sx= {{ background: purple }}>
               
               <Typography variant= "h3" sx= {{fontFamily: "Forum"}}>
                 {titleTexts.titleOne[lang]}
@@ -67,14 +67,15 @@ function PageTitle({lang, matches}) {
         );    
     } else {
 
-      {/* if smaller screen: */}
+      /* if smaller screen: */
       return(
         <Container
           sx= {{
             textAlign: "center", 
             alignItems: 'center',
             marginBottom: "20px",
-            background: purple
+            background: purple,
+            padding: "20px"
           }}>
 
                 <Typography variant= "h4" sx= {{fontFamily: "Forum"}}>

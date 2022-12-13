@@ -1,6 +1,6 @@
 
-import { contactTexts, contactFormUrl } from '../texts/texts.js';
-import { Container, Typography } from '@mui/material';
+import { contactFormUrl } from '../texts/texts.js';
+import { Container } from '@mui/material';
 import Header from './Header';
 
 function Contact({ lang, setLang, matches}) {
@@ -24,11 +24,17 @@ function Contact({ lang, setLang, matches}) {
             setLang = {setLang}
           />          
         
-          <Typography variant= "h5" sx= {{fontFamily: "Forum"}}>
-            {contactTexts.title[lang]}
-          </Typography>
-
-          <iframe title= "contactFormScreen" src={contactFormUrl[lang]} width="640" height="358" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+          <iframe 
+            title= "contactFormScreen" 
+            src={contactFormUrl[lang]} 
+            frameBorder="0" 
+            marginHeight="0" 
+            marginWidth="0"
+            style= {{
+              width: "100%",
+              height: "100vh"
+            }}
+            >Loading…</iframe>
 
      
       </Container>
@@ -52,10 +58,6 @@ function Contact({ lang, setLang, matches}) {
             matches= {matches}
             setLang = {setLang}
           />           
-        
-          <Typography variant= "h5" sx= {{fontFamily: "Forum"}}>
-            {contactTexts.title[lang]}
-          </Typography>
 
           <iframe title= "contactFormMobile" src={contactFormUrl[lang]} width="640" height="358" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
 

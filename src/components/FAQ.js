@@ -125,7 +125,8 @@ function FAQ({lang, matches, setLang}) {
           <Button
             sx= {{
               background: purple2,
-              color: "black"
+              color: "black",
+              fontWeight: "bold"
             }}
             value= 'contact'
             onClick= {changePage}

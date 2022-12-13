@@ -27,10 +27,7 @@ function MainPage({ lang, matches }) {
         <Grid container justifyContent="center" spacing={2} columns={12}>
     
           <Grid item xs={4} sx= {{background: lightPurple}}>
-            <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
-              01.          
-            </Typography>
-            <Typography variant= "h3" padding= "40px" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h4" padding= "40px" sx= {{fontFamily: "Forum", fontWeight: "bold"}}>
               {tripleTexts.titleOne[lang]}        
             </Typography>   
             <Typography variant= "h6" padding= "40px" sx= {{fontFamily: "Forum"}}>
@@ -39,10 +36,7 @@ function MainPage({ lang, matches }) {
           </Grid>
     
           <Grid item xs={4} sx= {{background: lighterPurple}}>
-            <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
-              02.
-            </Typography>
-            <Typography variant= "h3" padding= "40px" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h4" padding= "40px" sx= {{fontFamily: "Forum", fontWeight: "bold"}}>
               {tripleTexts.titleTwo[lang]}        
             </Typography>   
             <Typography variant= "h6" padding= "40px" sx= {{fontFamily: "Forum"}}>
@@ -53,7 +47,8 @@ function MainPage({ lang, matches }) {
               float: "right bottom",
               marginTop: "2px",
               color: "black",
-              background: purple
+              background: purple,
+              fontWeight: "bold"
             }}
             value= 'faq'
             onClick= {changePage}
@@ -63,10 +58,7 @@ function MainPage({ lang, matches }) {
           </Grid>
   
           <Grid item xs={4} sx= {{background: purple2}}>
-            <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
-              03.
-            </Typography>
-            <Typography variant= "h3" padding= "40px" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h4" padding= "40px" sx= {{fontFamily: "Forum", fontWeight: "bold"}}>
               {tripleTexts.titleThree[lang]}        
             </Typography>   
             <Typography variant= "h6" padding= "40px" sx= {{fontFamily: "Forum"}}>
@@ -94,9 +86,6 @@ function MainPage({ lang, matches }) {
         <Grid container justifyContent="center" spacing={2} columns={1}>
 
           <Grid item xs={1} sx= {{background: lightPurple}}>
-            <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
-              01.          
-            </Typography>
             <Typography variant= "h4" padding= "40px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.titleOne[lang]}        
             </Typography>   
@@ -106,9 +95,6 @@ function MainPage({ lang, matches }) {
           </Grid>
 
           <Grid item xs={1} sx= {{background: lighterPurple}}>
-            <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
-              02.
-            </Typography>
             <Typography variant= "h4" padding= "40px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.titleTwo[lang]}        
             </Typography>   
@@ -118,9 +104,6 @@ function MainPage({ lang, matches }) {
           </Grid>
 
           <Grid item xs={1} sx= {{background: purple2}}>
-            <Typography variant= "h6" sx= {{fontFamily: "Forum"}}>
-              03.
-            </Typography>
             <Typography variant= "h4" padding= "40px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.titleThree[lang]}        
             </Typography>   

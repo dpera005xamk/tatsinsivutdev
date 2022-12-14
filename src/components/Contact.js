@@ -59,7 +59,16 @@ function Contact({ lang, setLang, matches}) {
             setLang = {setLang}
           />           
 
-          <iframe title= "contactFormMobile" src={contactFormUrl[lang]} width="640" height="358" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+          <iframe 
+            title= "contactFormMobile" 
+            src={contactFormUrl[lang]} 
+            style= {{
+              width: "100%",
+              height: "100vh"
+            }}
+            frameBorder="0" 
+            marginHeight="0" 
+            marginWidth="0">Loading…</iframe>
 
      
       </Container>

@@ -87,3 +87,8 @@ export const contactFormUrl = {
     en: "https://docs.google.com/forms/d/e/1FAIpQLSe6oJhFC_3djqWsUL4UolbG5ZyHsyCH3EpAi7GHlWmMxjfcmA/viewform?embedded=true",
     pt: "https://docs.google.com/forms/d/e/1FAIpQLSdlLJ7-BqkX7-ONWEyNbp9_1L9uEiRZvdJSGO2NQL_pzCUCkA/viewform?embedded=true"
 }
+
+export const textUp = {
+    en: "go to top",
+    pt: "voltar ao topo"
+}

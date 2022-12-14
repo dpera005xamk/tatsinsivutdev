@@ -86,28 +86,28 @@ function MainPage({ lang, matches }) {
         <Grid container justifyContent="center" spacing={2} columns={1}>
 
           <Grid item xs={1} sx= {{background: lightPurple}}>
-            <Typography variant= "h4" padding= "40px" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h4" padding= "20px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.titleOne[lang]}        
             </Typography>   
-            <Typography variant= "h6" padding= "40px" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h6" padding= "20px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.descOne[lang]}        
             </Typography>                    
           </Grid>
 
           <Grid item xs={1} sx= {{background: lighterPurple}}>
-            <Typography variant= "h4" padding= "40px" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h4" padding= "20px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.titleTwo[lang]}        
             </Typography>   
-            <Typography variant= "h6" padding= "40px" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h6" padding= "20px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.descTwo[lang]}        
             </Typography>         
           </Grid>
 
           <Grid item xs={1} sx= {{background: purple2}}>
-            <Typography variant= "h4" padding= "40px" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h4" padding= "20px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.titleThree[lang]}        
             </Typography>   
-            <Typography variant= "h6" padding= "40px" sx= {{fontFamily: "Forum"}}>
+            <Typography variant= "h6" padding= "20px" sx= {{fontFamily: "Forum"}}>
               {tripleTexts.descThree[lang]}        
             </Typography>           
           </Grid>      

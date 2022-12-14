@@ -1,6 +1,6 @@
 
 import { Button, Container, Typography } from '@mui/material';
-import { faqTexts } from '../texts/texts.js';
+import { faqTexts, textUp } from '../texts/texts.js';
 import { purple2, lightPurple, lighterPurple } from '../colours/colours.js';
 import Header from './Header';
 import { useNavigate } from 'react-router-dom';
@@ -12,6 +12,13 @@ const fontAndPadding = {
   marginTop: "15px" 
 }
 
+const fontAndPaddingMobile = {
+  fontFamily: "Forum",
+  paddingLeft: "5px",
+  paddingRight: "5px",
+  marginTop: "15px"
+}
+
 const minHeightAndPadding = {
   minHeight: "300px",
   padding: "20px"
@@ -19,6 +26,10 @@ const minHeightAndPadding = {
 
 function FAQ({lang, matches, setLang}) {
   const navigate = useNavigate();
+  
+  const scrollUp = () => {
+    window.scrollTo(0, 0);
+  }
 
   const changePage = (e) => {
     window.scrollTo(0, 0);
@@ -146,7 +157,6 @@ function FAQ({lang, matches, setLang}) {
       maxWidth = "100vw" 
       sx = {{
         marginBottom: "20px",
-        textAlign: "center",
         fontFamily: "Forum"
       }}  
       >
@@ -167,7 +177,7 @@ function FAQ({lang, matches, setLang}) {
             {faqTexts.titleOne[lang]}
           </Typography>
               
-          <Typography variant= "h6" sx= {fontAndPadding}>
+          <Typography variant= "h6" sx= {fontAndPaddingMobile}>
             {faqTexts.descOne[lang]}
           </Typography>
 
@@ -179,7 +189,7 @@ function FAQ({lang, matches, setLang}) {
             {faqTexts.titleTwo[lang]}
           </Typography>
               
-          <Typography variant= "h6" sx= {fontAndPadding}>
+          <Typography variant= "h6" sx= {fontAndPaddingMobile}>
             {faqTexts.descTwo[lang]}
           </Typography>
 
@@ -191,7 +201,7 @@ function FAQ({lang, matches, setLang}) {
             {faqTexts.titleThree[lang]}
           </Typography>
               
-          <Typography variant= "h6" sx= {fontAndPadding}>
+          <Typography variant= "h6" sx= {fontAndPaddingMobile}>
             {faqTexts.descThree[lang]}
           </Typography>
 
@@ -203,7 +213,7 @@ function FAQ({lang, matches, setLang}) {
             {faqTexts.titleFour[lang]}
           </Typography>
               
-          <Typography variant= "h6" sx= {fontAndPadding}>
+          <Typography variant= "h6" sx= {fontAndPaddingMobile}>
             {faqTexts.descFour[lang]}
           </Typography>
 
@@ -215,7 +225,7 @@ function FAQ({lang, matches, setLang}) {
             {faqTexts.titleFive[lang]}
           </Typography>
               
-          <Typography variant= "h6" sx= {fontAndPadding}>
+          <Typography variant= "h6" sx= {fontAndPaddingMobile}>
             {faqTexts.descFive[lang]}
           </Typography>
 
@@ -227,7 +237,7 @@ function FAQ({lang, matches, setLang}) {
             {faqTexts.titleSix[lang]}
           </Typography>
               
-          <Typography variant= "h6" sx= {fontAndPadding}>
+          <Typography variant= "h6" sx= {fontAndPaddingMobile}>
             {faqTexts.descSix[lang]}
           </Typography>
 
@@ -243,6 +253,17 @@ function FAQ({lang, matches, setLang}) {
           >
             {faqTexts.buttonTitle[lang]}
           </Button>
+
+          <Button
+            sx= {{
+              color: "black",
+              fontWeight: "bold"
+            }}
+            value= 'contact'
+            onClick= {scrollUp}
+          >
+            {textUp[lang]}
+          </Button>          
 
       </Container>
       );

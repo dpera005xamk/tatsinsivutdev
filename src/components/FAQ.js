@@ -45,7 +45,7 @@ function FAQ({lang, matches, setLang}) {
         maxWidth = "100vw" 
         sx = {{
           marginBottom: "20px",
-          width: "60%",
+          width: "80%",
           textAlign: "center",
           fontFamily: "Forum"
         }}  

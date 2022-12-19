@@ -92,3 +92,8 @@ export const textUp = {
     en: "go to top",
     pt: "voltar ao topo"
 }
+
+export const footerTexts = {
+    contactText: {en: "Contact me", pt: "Contate-me"},
+    memberText: {en: "Member of ", pt: "Membra de "}
+}

@@ -36,7 +36,9 @@ function Home( { lang, matches, setLang }) {
       />
 
       <Footer
-        lang= {lang}/>
+        lang= {lang}
+        matches= {matches}
+      />
       
     </Container>
     );

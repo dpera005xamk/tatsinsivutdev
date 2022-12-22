@@ -78,3 +78,5 @@ function App() {
 }
 
 export default App;
+
+/* could try this: https://stackoverflow.com/questions/25086832/how-to-stop-in-browser-with-react-router*/

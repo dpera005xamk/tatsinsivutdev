@@ -46,11 +46,11 @@ export const tripleTexts = {
 
 // FAQ
 export const faqTexts = {
-    titleOne: {en: 'What do I offer', pt: 'Que Tipo de Serviço Ofereço'},
+    titleOne: {en: 'What services do I provide?', pt: 'Que Tipo de Serviço Ofereço'},
     titleTwo: {en: 'Which kind of counselling do I offer?', pt: 'Abordagem Utilizada'},
     titleThree: {en: 'Do you need psychological counselling?', pt: 'Como Saber se Você Precisa de Aconselhamento Psicológico'},
     titleFour: {en: 'How to find a proper counsellor?', pt: 'Como Encontrar um Profissional de Saúde Mental Adequado'},
-    titleFive: {en: 'I do not offer psychotherapy.', pt: 'Eu Não Ofereço Serviço de Psicoterapia.'},
+    titleFive: {en: 'Is psychological counselling the same as psychotherapy?', pt: 'Eu Não Ofereço Serviço de Psicoterapia.'},
     titleSix: {en: 'The next step', pt: 'Se Você Chegou Até Aqui, Por que Não Experimentar?'},
     descOne: {
         en: `I offer online group and individual counselling for adults and teenagers in English and Portuguese. My speciality is working with socially marginalized groups, such as women, racialized people, immigrants, people with learning and physical disabilities and LGBTQIAP+. I have deep knowledge of aggression, violence, trauma and stigmatization. I also have experience working with domestic violence victims who developed PTSD. However, my experience does not stop me from attending adults and teenagers from other groups. The counselling process will happen if you and I are a good fit.`, 
@@ -59,7 +59,7 @@ export const faqTexts = {
         en: `My therapeutic approach is Humanistic, most specifically the Person Centered-Therapy, in which you and I work together to develop the potentialities that you already have in a private and secure space. Empathy and full acceptance without judgment is this approach’s basic core. There is no right or wrong in the ways you think, feel and express yourself in my presence. I can handle the pressure. So, do not feel afraid to chock me or scare me.  `, 
         pt: `Minha abordagem terapêutica é humanista, mais especificamente trabalho com a chamada Terapia Centrada na Pessoa, na qual você e eu trabalhamos juntos para desenvolver as potencialidades que você já possui em um espaço privado e seguro. Empatia e aceitação total sem julgamento são as bases desta abordagem. Não há certo ou errado na maneira como você pensa, sente e se expressa em minha presença. Eu posso lidar com a pressão. Portanto, não tenha receio em me chocar ou me assustar com as suas experiências.`},
     descThree: {
-        en: `This is a question that only you can answer. But If you feel overwhelmed, lost, constantly sad, you have the impression that you cannot handle your emotions properly, or if you feel you don’t fit in the world around you and because of that you feel lonely, maybe is time to give it a try and talk with someone who will listen to you and will walk with you side by side into your journey. Why not try it?`, 
+        en: `This is a question that only you can answer. But if you feel overwhelmed, lost, constantly sad, you have the impression that you cannot handle your emotions properly, or if you feel you don’t fit in the world around you and because of that you feel lonely, maybe is time to give it a try and talk with someone who will listen to you and will walk with you side by side into your journey. Why not try it?`, 
         pt: `Essa é uma pergunta que só você pode responder. Mas se você se sente sobrecarregada (o), perdida (o), constantemente triste, tem a impressão de que não consegue lidar bem com suas emoções, ou sente que não se encaixa no mundo ao seu redor e por isso se sente sozinha (o), talvez seja a hora de se permitir conversar com alguém que irá ouvi-la (o) e caminhar com você lado a lado em sua jornada. Por que não tentar?`},
     descFour: {
         en: `Don’t worry. You will feel that the counsellor is the right one in the interview session. If there is a connection between you and the counsellor, the process will begin naturally.`, 

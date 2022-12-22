@@ -77,6 +77,8 @@ export const faqTexts = {
 }
 // Bloq
 
+// blog section not yet done
+
 // Contact
 export const contactTexts = {
     title: {en: 'Contact', pt: 'Contato'}
@@ -88,11 +90,13 @@ export const contactFormUrl = {
     pt: "https://docs.google.com/forms/d/e/1FAIpQLSdlLJ7-BqkX7-ONWEyNbp9_1L9uEiRZvdJSGO2NQL_pzCUCkA/viewform?embedded=true"
 }
 
+// go back to up
 export const textUp = {
     en: "go to top",
     pt: "voltar ao topo"
 }
 
+// footer
 export const footerTexts = {
     contactText: {en: "Contact me", pt: "Contate-me"},
     memberText: {en: "Member of ", pt: "Membra de "}

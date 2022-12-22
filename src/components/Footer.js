@@ -1,5 +1,5 @@
 
-import { Container, Typography, Grid, ImageListItem, Box  } from '@mui/material';
+import { Container, Typography, Grid, ImageListItem, Box, autocompleteClasses  } from '@mui/material';
 import { footerTexts } from '../texts/texts.js';
 import unionImg from '../img/Location-Independent-Therapists_Final-logo_LIT_Logo-Final_aqua_lr.png';
 
@@ -32,8 +32,8 @@ function Footer({ lang, matches }) {
                 {footerTexts.memberText[lang]}
               </Typography>
 
-            <Box>
-                <ImageListItem >
+            <Box width= "50%" sx= {{marginLeft: "auto", marginRight: "auto"}}>
+                <ImageListItem>
                   <img
                     src={unionImg}
                     alt={'therapist union'}
@@ -43,13 +43,13 @@ function Footer({ lang, matches }) {
               </Box>
     
             </Grid>
-      {/* 
+       
             <Grid item xs={8}>
               <Typography variant= "h5" sx= {{fontFamily: "Forum"}}>
-                  {footerTexts.contactText[lang]}
+                  {footerTexts.contactText[lang]}: info(a)tatianaeboli.com
                 </Typography>
             </Grid>     
-      */}
+      
           </Grid>
        
         </Container>
@@ -66,43 +66,25 @@ function Footer({ lang, matches }) {
             fontFamily: "Forum"
           }}  
         >
-          <Grid 
-            container 
-            spacing={0} 
-            columns={16} 
-            textAlign= "center" 
-            sx= {{
-              display: 'flex', 
-              alignItems: 'center',
-              marginBottom: "20px"
-            }}>
+   
+        <Typography variant= "h5" sx= {{fontFamily: "Forum"}}>
+          {footerTexts.contactText[lang]}: info(a)tatianaeboli.com
+        </Typography>         
         
-          <Grid item xs={8} >
-  
-            <Typography variant= "h5" sx= {{fontFamily: "Forum"}}>
-              {footerTexts.memberText[lang]}
-            </Typography>
-  
-            <Box>
-              <ImageListItem >
-                <img
-                  src={unionImg}
-                  alt={'therapist union'}
-                  sx= {{overflowY: "hidden"}}
-                />
-              </ImageListItem>
-            </Box>
-      
-          </Grid>
-        {/*
-          <Grid item xs={8}>
-            <Typography variant= "h5" sx= {{fontFamily: "Forum"}}>
-              {footerTexts.contactText[lang]}
-            </Typography>
-          </Grid>     
-          */}    
-        </Grid>
-         
+        <Typography variant= "h5" sx= {{fontFamily: "Forum", marginTop: "20px"}}>
+          {footerTexts.memberText[lang]}
+        </Typography>
+
+        <Box width= "50%">
+          <ImageListItem>
+            <img
+              src={unionImg}
+              alt={'therapist union'}
+              sx= {{overflowY: "hidden"}}
+            />
+          </ImageListItem>
+        </Box>
+
       </Container>
     );  
   }

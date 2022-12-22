@@ -20,7 +20,7 @@ export const titleTexts = {
 
 // Description
 export const mainTexts = {
-    mainOne: {en: 'Who am I', pt: 'Aconselhamento'},
+    mainOne: {en: 'About Me', pt: 'Aconselhamento'},
     mainTwo: {en: 'Tatiana Eboli', pt: 'Tatiana Eboli'},
     mainThree: {
       en: 'I’m a Brazilian certified psychologist who has been living a nomad life for about 7 years in Europe. I have a bachelor’s degree in Psychology from Brazil and a master’s degree in Peace Studies (Social Sciences with a focus on Developmental Psychology) from Finland.', 

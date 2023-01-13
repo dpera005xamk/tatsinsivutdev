@@ -1,7 +1,7 @@
 
 import { Container, Typography, Button, Grid } from '@mui/material';
 import { buttonTexts } from '../texts/texts.js'
-import { purple, lightPurple } from '../colours/colours.js';
+import { lightPurple } from '../colours/colours.js';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -48,7 +48,13 @@ function Header({lang, setLang, matches}) {
           </Typography>
         </Grid>
     
-        <Grid item sm= {8} sx= {{textAlign: "right"}}>
+        <Grid item sm= {8} 
+          sx= {{
+            textAlign: "right",
+            margin: "auto",
+            padding: "30px 0"
+          }}>
+          {/* customer wanted this away
           <Button 
             sx= {{
               background: purple,
@@ -63,7 +69,7 @@ function Header({lang, setLang, matches}) {
           >
             {buttonTexts.bookButton[lang]}
           </Button>
-  
+          */}  
           <Button
             sx= {{
               float: "right bottom",
@@ -164,7 +170,7 @@ function Header({lang, setLang, matches}) {
         </Grid>
     
         <Grid item sm= {16} sx= {{textAlign: "right"}}>
-
+          {/*  
           <Button 
             sx= {{
               background: purple,
@@ -176,7 +182,7 @@ function Header({lang, setLang, matches}) {
           >
             {buttonTexts.bookButton[lang]}
           </Button>
-  
+          */}  
           <Button
             sx= {{
               marginTop: "2px",

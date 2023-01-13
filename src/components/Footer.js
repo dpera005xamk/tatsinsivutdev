@@ -1,9 +1,22 @@
 
-import { Container, Typography, Grid, ImageListItem, Box, autocompleteClasses  } from '@mui/material';
+import { Container, Typography, Grid, ImageListItem, Box } from '@mui/material';
 import { footerTexts } from '../texts/texts.js';
 import unionImg from '../img/Location-Independent-Therapists_Final-logo_LIT_Logo-Final_aqua_lr.png';
+import linkedImg from '../img/In-Blue-48.png';
 
 function Footer({ lang, matches }) {
+
+  const showCursor = (e) => {
+    e.target.style.cursor = 'pointer';
+  }
+
+  const goToPageUnion = (e) => {
+    window.open('https://locationindependenttherapists.com/', '_blank');
+  }
+ 
+  const goToPageLi = (e) => {
+    window.open('https://www.linkedin.com/in/tatiana-eboli/', '_blank');
+  } 
     /* if bigger screen: */
 
     if (matches) {
@@ -38,6 +51,8 @@ function Footer({ lang, matches }) {
                     src={unionImg}
                     alt={'therapist union'}
                     sx= {{overflowY: "hidden"}}
+                    onMouseEnter= {showCursor}
+                    onClick= {goToPageUnion}
                   />
                 </ImageListItem>
               </Box>
@@ -46,8 +61,21 @@ function Footer({ lang, matches }) {
        
             <Grid item xs={8}>
               <Typography variant= "h5" sx= {{fontFamily: "Forum"}}>
-                  {footerTexts.contactText[lang]}: info(a)tatianaeboli.com
-                </Typography>
+                {footerTexts.contactText[lang]}: info(a)tatianaeboli.com
+              </Typography>
+
+              <Box maxWidth= "58px" sx= {{marginLeft: "auto", marginRight: "auto", padding: "20px"}}>
+                <ImageListItem>
+                  <img
+                    src={linkedImg}
+                    alt={'linked in of Tatiana Eboli'}
+                    sx= {{overflowY: "hidden"}}
+                    onMouseEnter= {showCursor}
+                    onClick= {goToPageLi}
+                  />
+                </ImageListItem>
+              </Box>
+
             </Grid>     
       
           </Grid>
@@ -70,17 +98,31 @@ function Footer({ lang, matches }) {
         <Typography variant= "h5" sx= {{fontFamily: "Forum"}}>
           {footerTexts.contactText[lang]}: info(a)tatianaeboli.com
         </Typography>         
-        
+
+        <Box maxWidth= "58px" sx= {{padding: "10px"}}>
+          <ImageListItem>
+            <img
+              src={linkedImg}
+              alt={'linked in of Tatiana Eboli'}
+              sx= {{overflowY: "hidden"}}
+              onMouseEnter= {showCursor}
+              onClick= {goToPageLi}
+            />
+          </ImageListItem>
+        </Box>
+
         <Typography variant= "h5" sx= {{fontFamily: "Forum", marginTop: "20px"}}>
           {footerTexts.memberText[lang]}
         </Typography>
 
-        <Box width= "50%">
+        <Box width= "50%" sx= {{padding: "10px"}}>
           <ImageListItem>
             <img
               src={unionImg}
               alt={'therapist union'}
               sx= {{overflowY: "hidden"}}
+              onMouseEnter= {showCursor}
+              onClick= {goToPageUnion}
             />
           </ImageListItem>
         </Box>

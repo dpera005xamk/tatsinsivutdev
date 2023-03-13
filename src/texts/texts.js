@@ -50,7 +50,7 @@ export const faqTexts = {
     titleTwo: {en: 'Which kind of counselling do I offer?', pt: 'Abordagem Utilizada'},
     titleThree: {en: 'Do you need psychological counselling?', pt: 'Como Saber se Você Precisa de Aconselhamento Psicológico'},
     titleFour: {en: 'How to find a proper counsellor?', pt: 'Como Encontrar um Profissional de Saúde Mental Adequado'},
-    titleFive: {en: 'Is psychological counselling the same as psychotherapy?', pt: 'Eu Não Ofereço Serviço de Psicoterapia.'},
+    titleFive: {en: 'What my specialties are?', pt: 'Minha Especialidades'}, // changed 13.3.2023
     titleSix: {en: 'The next step', pt: 'Se Você Chegou Até Aqui, Por que Não Experimentar?'},
     descOne: {
         en: `I offer online group and individual counselling for adults and teenagers in English and Portuguese. My speciality is working with socially marginalized groups, such as women, racialized people, immigrants, people with learning and physical disabilities and LGBTQIAP+. I have deep knowledge of aggression, violence, trauma and stigmatization. I also have experience working with domestic violence victims who developed PTSD. However, my experience does not stop me from attending adults and teenagers from other groups. The counselling process will happen if you and I are a good fit.`, 
@@ -64,9 +64,9 @@ export const faqTexts = {
     descFour: {
         en: `Don’t worry. You will feel that the counsellor is the right one in the interview session. If there is a connection between you and the counsellor, the process will begin naturally.`, 
         pt: `Não se preocupe. Você sentirá que o profissional é a pessoa certa ou não logo nas primeiras sessões. Se houver uma conexão entre você e o profissional, o processo se iniciará naturalmente.`},
-    descFive: {
-        en: `Counselling is different from psychotherapy, since counselling is a brief and focused intervention which will help you to deal with a crisis that you are living in at the moment. If we realize together during the process that you need psychotherapy, I will refer you to a psychotherapist.`, 
-        pt: `O aconselhamento psicológico é diferente da psicoterapia, pois o aconselhamento é uma intervenção breve e focada que vai te auxiliar a lidar com uma crise que esteja vivendo no momento. Se percebermos juntos durante o processo que você precisa de psicoterapia, irei encaminhá-la(o) para um psicoterapeuta, se assim o desejar.`},
+    descFive: { // changed 13.3.2023
+        en: `Stress, Anxiety, Depressed Mood, Burnout, Self-Esteem, Transnational Relationship, Identity Crisis, Life Transition, Conflict Mediation, Domestic Violence, Women’s Empowerment, Socialization and Adaptation of Adults with Autism.`, 
+        pt: `Estresse, Ansiedade, Humor Deprimido, Burnout, Autoestima, Relacionamento Intercultural, Crise de Identidade,Transição para Nova Realidade, Mediação de Conflitos, Violência Doméstica, Empoderamento Feminino, Socialização e Adaptação de Pessoas Adultas com Autismo.`},
     descSix: {
         en: `We will have a 30-minute meeting to understand your situation and define the strategy we are going to use. Each people has different needs and take a different amount of time to deal with their crisis. We, together, will define the best strategy for you.
         The sessions usually last 50 minutes and happen once a week, but we can arrange more time when needed.`, 

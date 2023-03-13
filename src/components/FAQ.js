@@ -88,6 +88,18 @@ function FAQ({lang, matches, setLang}) {
           <Container sx= {{ background: purple2, marginBottom: "20px", ...minHeightAndPadding }}>
 
             <Typography variant= "h4" sx= {fontAndPadding}>
+              {faqTexts.titleFive[lang]}
+            </Typography>
+                
+            <Typography variant= "h6" sx= {fontAndPadding}>
+              {faqTexts.descFive[lang]}
+            </Typography>
+
+          </Container>
+
+          <Container sx= {{ background: lightPurple, marginBottom: "20px", ...minHeightAndPadding }}>
+
+            <Typography variant= "h4" sx= {fontAndPadding}>
               {faqTexts.titleThree[lang]}
             </Typography>
                 
@@ -97,7 +109,7 @@ function FAQ({lang, matches, setLang}) {
 
           </Container>
 
-          <Container sx= {{ background: lightPurple, marginBottom: "20px", ...minHeightAndPadding }}>
+          <Container sx= {{ background: lighterPurple, marginBottom: "20px", ...minHeightAndPadding }}>
 
             <Typography variant= "h4" sx= {fontAndPadding}>
               {faqTexts.titleFour[lang]}
@@ -105,18 +117,6 @@ function FAQ({lang, matches, setLang}) {
                 
             <Typography variant= "h6" sx= {fontAndPadding}>
               {faqTexts.descFour[lang]}
-            </Typography>
-
-          </Container>
-
-          <Container sx= {{ background: lighterPurple, marginBottom: "20px", ...minHeightAndPadding }}>
-
-            <Typography variant= "h4" sx= {fontAndPadding}>
-              {faqTexts.titleFive[lang]}
-            </Typography>
-                
-            <Typography variant= "h6" sx= {fontAndPadding}>
-              {faqTexts.descFive[lang]}
             </Typography>
 
           </Container>
@@ -198,6 +198,18 @@ function FAQ({lang, matches, setLang}) {
         <Container sx= {{ background: purple2, marginBottom: "20px", ...minHeightAndPadding }}>
 
           <Typography variant= "h5" sx= {{fontFamily: "Forum", fontWeight: "bold"}}>
+            {faqTexts.titleFive[lang]}
+          </Typography>
+              
+          <Typography variant= "h6" sx= {fontAndPaddingMobile}>
+            {faqTexts.descFive[lang]}
+          </Typography>
+
+        </Container>
+
+        <Container sx= {{ background: lightPurple, marginBottom: "20px", ...minHeightAndPadding }}>
+
+          <Typography variant= "h5" sx= {{fontFamily: "Forum", fontWeight: "bold"}}>
             {faqTexts.titleThree[lang]}
           </Typography>
               
@@ -207,7 +219,7 @@ function FAQ({lang, matches, setLang}) {
 
         </Container>
 
-        <Container sx= {{ background: lightPurple, marginBottom: "20px", ...minHeightAndPadding }}>
+        <Container sx= {{ background: lighterPurple, marginBottom: "20px", ...minHeightAndPadding }}>
 
           <Typography variant= "h5" sx= {{fontFamily: "Forum", fontWeight: "bold"}}>
             {faqTexts.titleFour[lang]}
@@ -215,18 +227,6 @@ function FAQ({lang, matches, setLang}) {
               
           <Typography variant= "h6" sx= {fontAndPaddingMobile}>
             {faqTexts.descFour[lang]}
-          </Typography>
-
-        </Container>
-
-        <Container sx= {{ background: lighterPurple, marginBottom: "20px", ...minHeightAndPadding }}>
-
-          <Typography variant= "h5" sx= {{fontFamily: "Forum", fontWeight: "bold"}}>
-            {faqTexts.titleFive[lang]}
-          </Typography>
-              
-          <Typography variant= "h6" sx= {fontAndPaddingMobile}>
-            {faqTexts.descFive[lang]}
           </Typography>
 
         </Container>
